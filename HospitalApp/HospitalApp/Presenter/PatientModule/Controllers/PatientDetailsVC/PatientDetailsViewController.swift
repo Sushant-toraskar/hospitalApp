@@ -1,5 +1,5 @@
 //
-//  AllPatientViewController.swift
+//  PatientDetailsViewController.swift
 //  HospitalApp
 //
 //  Created by sushant's Macbook on 09/03/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AllPatientViewController: UIViewController {
+class PatientDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

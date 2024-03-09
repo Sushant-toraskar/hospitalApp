@@ -16,6 +16,12 @@
 		EF2E156B2B9C85FA0042A687 /* HospitalAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E156A2B9C85FA0042A687 /* HospitalAppUITestsLaunchTests.swift */; };
 		EF2E157A2B9C87BB0042A687 /* PatientModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2E15792B9C87BB0042A687 /* PatientModule.storyboard */; };
 		EF2E157E2B9C88200042A687 /* AllPatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E157D2B9C88200042A687 /* AllPatientViewController.swift */; };
+		EF2E15812B9C897C0042A687 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E15802B9C897C0042A687 /* Constants.swift */; };
+		EF2E15892B9C8DDD0042A687 /* PatientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E15872B9C8DDD0042A687 /* PatientTableViewCell.swift */; };
+		EF2E158A2B9C8DDD0042A687 /* PatientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2E15882B9C8DDD0042A687 /* PatientTableViewCell.xib */; };
+		EF2E158D2B9C923C0042A687 /* PatientDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E158C2B9C923C0042A687 /* PatientDetailsViewController.swift */; };
+		EF2E15912B9C926C0042A687 /* PatientSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E158F2B9C926C0042A687 /* PatientSummaryTableViewCell.swift */; };
+		EF2E15922B9C926C0042A687 /* PatientSummaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2E15902B9C926C0042A687 /* PatientSummaryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		EF2E156A2B9C85FA0042A687 /* HospitalAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EF2E15792B9C87BB0042A687 /* PatientModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientModule.storyboard; sourceTree = "<group>"; };
 		EF2E157D2B9C88200042A687 /* AllPatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPatientViewController.swift; sourceTree = "<group>"; };
+		EF2E15802B9C897C0042A687 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EF2E15872B9C8DDD0042A687 /* PatientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTableViewCell.swift; sourceTree = "<group>"; };
+		EF2E15882B9C8DDD0042A687 /* PatientTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientTableViewCell.xib; sourceTree = "<group>"; };
+		EF2E158C2B9C923C0042A687 /* PatientDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDetailsViewController.swift; sourceTree = "<group>"; };
+		EF2E158F2B9C926C0042A687 /* PatientSummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSummaryTableViewCell.swift; sourceTree = "<group>"; };
+		EF2E15902B9C926C0042A687 /* PatientSummaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientSummaryTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,7 @@
 		EF2E15432B9C85F80042A687 /* HospitalApp */ = {
 			isa = PBXGroup;
 			children = (
+				EF2E157F2B9C896C0042A687 /* Utils */,
 				EF2E15772B9C87020042A687 /* Presenter */,
 				EF2E15442B9C85F80042A687 /* AppDelegate.swift */,
 				EF2E15502B9C85FA0042A687 /* Assets.xcassets */,
@@ -145,7 +158,8 @@
 		EF2E157B2B9C87E20042A687 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EF2E157D2B9C88200042A687 /* AllPatientViewController.swift */,
+				EF2E158B2B9C92090042A687 /* PatientDetailsVC */,
+				EF2E15852B9C8CBD0042A687 /* AllPatientsVC */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -157,6 +171,50 @@
 				EF2E15782B9C870B0042A687 /* Storyboard */,
 			);
 			path = PatientModule;
+			sourceTree = "<group>";
+		};
+		EF2E157F2B9C896C0042A687 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E15802B9C897C0042A687 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EF2E15852B9C8CBD0042A687 /* AllPatientsVC */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E15862B9C8CCE0042A687 /* Cells */,
+				EF2E157D2B9C88200042A687 /* AllPatientViewController.swift */,
+			);
+			path = AllPatientsVC;
+			sourceTree = "<group>";
+		};
+		EF2E15862B9C8CCE0042A687 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E15872B9C8DDD0042A687 /* PatientTableViewCell.swift */,
+				EF2E15882B9C8DDD0042A687 /* PatientTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EF2E158B2B9C92090042A687 /* PatientDetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E158E2B9C924A0042A687 /* Cells */,
+				EF2E158C2B9C923C0042A687 /* PatientDetailsViewController.swift */,
+			);
+			path = PatientDetailsVC;
+			sourceTree = "<group>";
+		};
+		EF2E158E2B9C924A0042A687 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E158F2B9C926C0042A687 /* PatientSummaryTableViewCell.swift */,
+				EF2E15902B9C926C0042A687 /* PatientSummaryTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +322,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2E157A2B9C87BB0042A687 /* PatientModule.storyboard in Resources */,
+				EF2E15922B9C926C0042A687 /* PatientSummaryTableViewCell.xib in Resources */,
+				EF2E158A2B9C8DDD0042A687 /* PatientTableViewCell.xib in Resources */,
 				EF2E15542B9C85FA0042A687 /* LaunchScreen.storyboard in Resources */,
 				EF2E15512B9C85FA0042A687 /* Assets.xcassets in Resources */,
 			);
@@ -292,7 +352,11 @@
 			files = (
 				EF2E154F2B9C85F80042A687 /* HospitalApp.xcdatamodeld in Sources */,
 				EF2E15452B9C85F80042A687 /* AppDelegate.swift in Sources */,
+				EF2E15892B9C8DDD0042A687 /* PatientTableViewCell.swift in Sources */,
+				EF2E15912B9C926C0042A687 /* PatientSummaryTableViewCell.swift in Sources */,
 				EF2E157E2B9C88200042A687 /* AllPatientViewController.swift in Sources */,
+				EF2E15812B9C897C0042A687 /* Constants.swift in Sources */,
+				EF2E158D2B9C923C0042A687 /* PatientDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

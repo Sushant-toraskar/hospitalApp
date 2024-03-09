@@ -22,8 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func rootViewController() -> UINavigationController {
-        let storyboard = UIStoryboard(name: "PatientModule", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "AllPatientViewController")
+        let storyboard = UIStoryboard(name: StoryboardConstants.patients.name, bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: ViewControllerConstants.allPatientVC.name)
         let navigation = UINavigationController(rootViewController: vc)
         navigation.setNavigationBarHidden(true, animated: false)
         return navigation
